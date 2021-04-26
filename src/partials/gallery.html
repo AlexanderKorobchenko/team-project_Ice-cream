@@ -1,0 +1,59 @@
+<section class="gallery">
+  <h2 class="visually-hidden">Gallery of our works</h2>
+  <div class="container">
+    <div class="gallery__wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/gallery/gallery_desktop.webp    1x,
+            ./images/desktop/gallery/gallery_desktop@2x.webp 2x
+          "
+          media="(min-width:1280px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/gallery/gallery_desktop.png    1x,
+            ./images/desktop/gallery/gallery_desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/gallery/gallery_tablet.webp    1x,
+            ./images/tablet/gallery/gallery_tablet@2x.webp 2x
+          "
+          media="(min-width:768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/tablet/gallery/gallery_tablet.png    1x,
+            ./images/tablet/gallery/gallery_tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/gallery/gallery_mobile.webp    1x,
+            ./images/mobile/gallery/gallery_mobile@2x.webp 2x
+          "
+          media="(min-width:320px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile/gallery/gallery_mobile.png    1x,
+            ./images/mobile/gallery/gallery_mobile@2x.png 2x
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          class="gallery__image"
+          src="./images/desktop/gallery/gallery_desktop.png"
+          alt="gallery"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
