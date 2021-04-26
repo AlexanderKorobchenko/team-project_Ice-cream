@@ -1,5 +1,8 @@
 @media screen and (max-width: 767px) {
-  .hero {
+  .container_hero {
+    position: relative;
+    overflow: visible;
+    max-width: 320px;
     background-image: url('../images/mobile/hero/mobile-bg-ellipse.png');
     background-repeat: no-repeat;
     background-position: right 83px;
@@ -8,7 +11,7 @@
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero {
+    .container_hero {
       background-image: url('../images/mobile/hero/mobile-bg-ellipse@2x.png');
     }
   }
