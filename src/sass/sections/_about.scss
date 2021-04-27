@@ -52,6 +52,10 @@
     }
   }
 
+  .about__image {
+    max-width: 100%;
+  }
+
   .title__label_about {
     font-weight: normal;
     font-size: 18px;
@@ -141,7 +145,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom -45%;
-    background-color: var(--bcg-pink-color);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/desktop/about/desktop-background@2x.png);
@@ -149,7 +152,6 @@
   }
 
   .title__label_about {
-    padding-top: 125px;
     font-size: 30px;
     line-height: 1.13;
   }
@@ -164,20 +166,48 @@
     margin-bottom: 36px;
     font-style: normal;
     font-size: 16px;
-    line-height: 1.75;
+    line-height: 176%;
     letter-spacing: 0.04em;
   }
 
   .about__description-second {
     margin-bottom: 46px;
     font-size: 14px;
-    line-height: 1.93;
+    line-height: 194%;
     letter-spacing: 0.04em;
   }
 
   .about__description-wrapper {
-    padding-top: 106px;
     padding-top: 56px;
     padding-left: 74px;
+  }
+
+  .modal-about__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .modal-about__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill var(--delay-time) var(--time-function);
+  }
+
+  .modal-about__description {
+    text-align: center;
   }
 }
