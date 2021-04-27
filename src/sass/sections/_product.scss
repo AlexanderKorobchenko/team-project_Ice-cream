@@ -135,12 +135,17 @@
   .product__item:nth-child(1) > .product__name::before {
     background-image: url(../images/mobile/product/1-product-mob@2x.png);
   }
+
   .product__item:nth-child(2) > .product__name::before {
     background-image: url(../images/mobile/product/2-product-mob@2x.png);
   }
 
   .product__item:nth-child(3) > .product__name::before {
     background-image: url(../images/mobile/product/3-product-mob@2x.png);
+  }
+
+  .product__name::after {
+    background-image: url(../images/desktop/product/points-3@2x.png);
   }
 }
 
