@@ -1,5 +1,5 @@
 .contacts-cards {
-  background-image: linear-gradient(to bottom, #fff 7%, #fff5f6 7%, #fff5f6 93%);
+  background-image: linear-gradient(to bottom, #fff 8%, #fff5f6 8%, #fff5f6 92%);
 
   @media screen and (max-width: 767px) {
     padding-top: 43px;
@@ -9,12 +9,13 @@
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 78px;
+    background-image: linear-gradient(to bottom, #fff 18%, #fff5f6 18%, #fff5f6 82%);
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 66px;
     padding-bottom: 82px;
-    background-image: linear-gradient(to bottom, #fff 25%, #fff5f6 25%, #fff5f6 75%);
+    background-image: linear-gradient(to bottom, #fff 20%, #fff5f6 20%, #fff5f6 80%);
   }
 }
 
