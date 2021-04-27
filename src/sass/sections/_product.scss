@@ -21,6 +21,10 @@
     padding-left: 40px;
 
     border-radius: 24px;
+
+    @media screen and (max-width: 319px) {
+      width: 100%;
+    }
   }
 
   &__name {
@@ -120,6 +124,16 @@
   display: block;
   width: 249px;
   height: 252px;
+
+  @media screen and (max-width: 319px) {
+    width: 200px;
+    height: 201px;
+  }
+
+  @media screen and (max-width: 240px) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .product__item:nth-child(1) > .product__name::before {

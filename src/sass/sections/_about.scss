@@ -46,6 +46,10 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/mobile/about/mobile-background@2x.png);
     }
+
+    .about__image {
+      max-width: 100%;
+    }
   }
 
   .title__label_about {
