@@ -3,22 +3,13 @@
     position: relative;
     overflow: visible;
     max-width: 320px;
-    background-image: url('../images/mobile/hero/mobile-bg-ellipse.png');
-    background-repeat: no-repeat;
-    background-position: right 83px;
-    background-size: 285px 345px;
     height: 502px;
-  }
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .container_hero {
-      background-image: url('../images/mobile/hero/mobile-bg-ellipse@2x.png');
-    }
   }
 }
 
 .hero {
   position: relative;
+  overflow: hidden;
   margin: 0 auto;
   max-width: 767px;
   background-color: var(--bcg-hero-color);
@@ -27,13 +18,26 @@
     position: absolute;
     left: 20px;
     top: 193px;
-    z-index: 10;
+    z-index: 5;
   }
 
   &__img-ice-cream {
     position: absolute;
-    right: 32px;
+    z-index: 4;
+    right: 17px;
     bottom: 0;
+  }
+
+  &__circle {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 345px;
+    height: 345px;
+    top: 83px;
+    right: -76px;
+    background: var(--title-text-color);
+    border-radius: 50%;
   }
 
   &__about,
@@ -79,16 +83,6 @@
     padding-right: 34px;
     height: 399px;
     position: relative;
-    background-image: url('../images/tablet/hero/tablet-bg-ellipse.png');
-    background-repeat: no-repeat;
-    background-position: 288px 31px;
-    background-size: 323px 323px;
-  }
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .container_hero {
-      background-image: url('../images/tablet/hero/tablet-bg-ellipse@2x.png');
-    }
   }
 
   .hero {
@@ -102,6 +96,13 @@
 
     &__wrapper {
       position: static;
+    }
+
+    &__circle {
+      width: 323px;
+      height: 323px;
+      top: 31px;
+      right: 135px;
     }
 
     &__content-item {
@@ -142,7 +143,7 @@
 
     &__img-ice-cream {
       bottom: 0;
-      right: 228px;
+      right: 232px;
     }
 
     &__img-milk {
@@ -156,6 +157,7 @@
     }
 
     &__img-tasty {
+      z-index: 5;
       bottom: 0;
       right: 34px;
     }
@@ -219,16 +221,6 @@
     padding-left: 15px;
     padding-right: 15px;
     height: 665px;
-    background-image: url('../images/desktop/hero/desktop-bg-ellipse.png');
-    background-repeat: no-repeat;
-    background-position: 375px 52px;
-    background-size: 538px 538px;
-  }
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .container_hero {
-      background-image: url('../images/desktop/hero/desktop-bg-ellipse@2x.png');
-    }
   }
 
   .title_hero {
@@ -253,6 +245,13 @@
       padding-top: 171px;
     }
 
+    &__circle {
+      width: 538px;
+      height: 538px;
+      top: 53px;
+      right: 165px;
+    }
+
     &__content-item {
       font-size: 46px;
     }
@@ -274,7 +273,7 @@
 
     &__img-ice-cream {
       bottom: 0;
-      right: 350px;
+      right: 335px;
     }
 
     &__img-milk {
