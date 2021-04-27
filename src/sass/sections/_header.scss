@@ -45,6 +45,7 @@
   height: 20px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   background-color: transparent;
 }
 .menu__icon {
@@ -93,6 +94,7 @@
   position: absolute;
   top: 23px;
   right: 34px;
+  cursor: pointer;
   background-color: transparent;
   &__icon {
     fill: var(--white-color);
