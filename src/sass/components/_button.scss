@@ -22,7 +22,7 @@
   // модификатор для красной кнопки
   &_color {
     color: var(--white-color);
-    background: var(--red-color);
+    background: var(--accent-color);
 
     &:hover,
     &:focus {
