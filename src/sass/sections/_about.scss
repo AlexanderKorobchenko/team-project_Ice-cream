@@ -111,22 +111,6 @@
     padding-bottom: 20px;
   }
 
-  .modal-about__close-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: fill var(--delay-time) var(--time-function);
-  }
-
   .modal-about__description {
     text-align: center;
     font-size: 14px;

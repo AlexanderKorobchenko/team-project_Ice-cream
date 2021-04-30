@@ -33,11 +33,15 @@
   }
 }
 
-// в хедере и хиро кнопки другие, будет еще модифтикатор
-
 .button__icon {
   width: 9px;
   height: 9px;
   margin-left: 10px;
   fill: var(--accent-color);
+}
+
+.button_send {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
