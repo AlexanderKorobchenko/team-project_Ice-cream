@@ -1,0 +1,36 @@
+#map {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  visibility: hidden;
+  opacity: 0;
+  // pointer-events: none;
+  transition: opacity 1000ms, transform 1000ms, visibility 1000ms;
+
+  &:target {
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 100;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.9);
+    &::before {
+      content: '';
+      width: 120%;
+      height: 120%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      // top: -50px;
+      background-image: url('../map-background.jpg');
+      opacity: 0.7;
+    }
+  }
+}
+.map-core {
+  border: 10px solid rgba(0, 128, 128, 0.34);
+  box-shadow: 0 0 30px 30px rgba(0, 128, 128, 0.34);
+}
