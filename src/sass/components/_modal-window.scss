@@ -8,8 +8,8 @@
   z-index: 1000;
   opacity: 1;
   overflow-y: scroll;
-  // background-image: linear-gradient(to bottom, white, pink);
-  background: var(--title-text-color);
+  // background: var(--title-text-color);
+  background-image: linear-gradient(to bottom, #f35f82, var(--title-text-color));
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &.is-hidden {
     opacity: 0;
