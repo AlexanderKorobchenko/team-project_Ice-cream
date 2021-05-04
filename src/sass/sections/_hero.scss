@@ -1,3 +1,42 @@
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container_hero {
     position: relative;
@@ -26,6 +65,23 @@
     z-index: 4;
     right: 17px;
     bottom: 0;
+  }
+
+  &__img-ice-cream,
+  &__img-milk,
+  &__img-tasty {
+    animation-name: zoomIn;
+    animation-duration: 700ms;
+  }
+
+  &__img-ice-cream:hover,
+  &__img-ice-cream:focus,
+  &__img-milk:hover,
+  &__img-milk:focus,
+  &__img-tasty:hover,
+  &__img-tasty:focus {
+    animation-name: tada;
+    animation-duration: 700ms;
   }
 
   &__circle {
@@ -154,6 +210,7 @@
     &__img-tasty {
       display: block;
       position: absolute;
+      animation-delay: 300ms;
     }
 
     &__img-tasty {
