@@ -1,15 +1,15 @@
 .btn-close {
-  display: flex;
   width: 20px;
   height: 20px;
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 18px;
   right: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   background-color: transparent;
 

@@ -74,18 +74,17 @@
   }
 }
 .contacts-cards__cafe {
-  text-align: center;
+  max-width: 80px;
   margin-bottom: 25px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-
-  letter-spacing: 0.04em;
-
+  border-radius: 4px;
+  @include font(500, 12px, 1.83, 0.04em);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 1.83;
+  // letter-spacing: 0.04em;
+  text-align: center;
   color: var(--white-color);
   background-color: var(--coffee-color);
-  border-radius: 4px;
-  max-width: 80px;
   @media screen and (min-width: 768px) {
     max-width: 73px;
     font-size: 16px;
@@ -93,18 +92,17 @@
   }
 }
 .contacts-cards__foodtruck {
-  text-align: center;
-  font-weight: 500;
-  font-size: 12px;
+  max-width: 130px;
   margin-bottom: 25px;
-  line-height: 1.83;
-
-  letter-spacing: 0.04em;
-
+  border-radius: 4px;
+  @include font(500, 12px, 1.83, 0.04em);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 1.83;
+  // letter-spacing: 0.04em;
+  text-align: center;
   color: var(--white-color);
   background-color: var(--green-color);
-  border-radius: 4px;
-  max-width: 130px;
   @media screen and (min-width: 768px) {
     // max-width: 138px;
     font-size: 16px;
@@ -115,11 +113,12 @@
   }
 }
 .contacts-cards__city {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
   margin-bottom: 10px;
-  letter-spacing: 0.04em;
+  @include font(500, 12px, 1.83, 0.04em);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 1.83;
+  // letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -132,11 +131,11 @@
 }
 .contacts-cards__text {
   width: 100%;
-
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
   margin-bottom: 50px;
+  @include font(500, 12px, 1.15, normal);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 1.5;
   color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
@@ -144,6 +143,7 @@
     line-height: 1.64;
   }
   @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 1.81, 0.04em);
     font-size: 16px;
     line-height: 1.81;
     letter-spacing: 0.04em;
@@ -166,10 +166,11 @@
 }
 
 .contacts-cards__shedule-days {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.22;
   margin-bottom: 10px;
+  @include font(500, 12px, 1.22, normal);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 1.22;
   color: #000000;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -181,11 +182,11 @@
   }
 }
 .contacts-cards__shedule-time {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-
-  color: #ffa5ba;
+  @include font(500, 12px, 1.83, normal);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 1.83;
+  color: var(--title-text-color);
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
@@ -206,9 +207,10 @@
   }
 }
 .contacts-cards__mob-info {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
+  @include font(500, 12px, 1.5, normal);
+  // font-weight: 500;
+  // font-size: 12px;
+  // line-height: 1.5;
   color: var(--primary-text-color);
   @media screen and (min-width: 768px) {
     font-size: 14px;

@@ -50,20 +50,22 @@
 }
 
 .advantages_value {
-  font-family: Titan One, cursive;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.14;
+  font-family: 'Titan One', cursive;
+  @include font(400, 36px, 1.14, normal);
+  // font-weight: 400;
+  // font-size: 36px;
+  // line-height: 1.14;
   color: var(--accent-color);
 }
 
 .advantages__description {
-  font-family: DM Sans, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--black-color);
   margin-top: 16px;
+  @include font(700, 16px, 1.75, normal);
+  // font-family: DM Sans, sans-serif;
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.75;
+  color: var(--black-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -72,10 +74,11 @@
   }
 
   .advantages__value {
-    font-family: Titan One, cursive;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.14;
+    font-family: 'Titan One', cursive;
+    @include font(400, 36px, 1.14, normal);
+    // font-weight: 400;
+    // font-size: 36px;
+    // line-height: 1.14;
     color: var(--accent-color);
   }
 }
@@ -99,10 +102,11 @@
   }
 
   .advantages__value {
-    font-family: Titan One, cursive;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.15;
+    font-family: 'Titan One', cursive;
+    @include font(400, 48px, 1.15, normal);
+    // font-weight: 400;
+    // font-size: 48px;
+    // line-height: 1.15;
     color: var(--accent-color);
   }
 
@@ -127,15 +131,16 @@
   }
 
   .advantages__value {
-    font-family: Titan One, cursive;
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 1.14;
+    font-family: 'Titan One', cursive;
+    @include font(400, 58px, 1.14, normal);
+    // font-weight: 400;
+    // font-size: 58px;
+    // line-height: 1.14;
     color: var(--accent-color);
   }
 
   .advantages__description {
-    font-size: 16px;
-    line-height: 1.76;
+    // font-size: 16px;
+    // line-height: 1.76;
   }
 }

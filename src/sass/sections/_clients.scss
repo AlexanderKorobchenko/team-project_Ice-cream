@@ -32,48 +32,52 @@
 
     @media screen and (min-width: 768px) {
       background-image: url('../images/quote.svg');
-      padding: 47px 36px 28px 60px;
+      padding: 28px 38px;
       width: 620px;
       margin: 0 auto;
       margin-bottom: 24px;
     }
     @media screen and (min-width: 1280px) {
-      background-image: url('../images/quote.svg');
-      padding: 47px 54px 32px 59px;
+      width: 926px;
+      padding: 32px 66px;
       margin-bottom: 15px;
+      background-image: url('../images/quote.svg');
     }
   }
   &__text {
     padding-right: 16px;
-    padding-left: 7px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.583;
-
+    padding-left: 35px;
+    @include font(500, 12px, 2.583, 0.04em);
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 2.583;
     text-align: center;
     background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 2.143;
-    letter-spacing: 0.04em;
-  }
 
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.875;
+    @media screen and (min-width: 768px) {
+      @include font(500, 14px, 2.143, 0.04em);
+      // font-size: 14px;
+      // line-height: 2.143;
+      // letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(500, 16px, 1.86, 0.04em);
+      // font-size: 16px;
+      // line-height: 1.875;
+    }
   }
 
   &__decor {
-    position: relative;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     width: 4px;
     height: 4px;
-    background-color: var(--btn-red-color);
-    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 18px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--btn-red-color);
     @media screen and (min-width: 768px) {
       margin-bottom: 14px;
     }
@@ -100,10 +104,11 @@
   }
 
   &__name {
+    @include font(500, 14px, 1.857, normal);
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.857;
     text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.857;
 
     @media screen and (min-width: 768px) {
       font-size: 16px;
@@ -127,7 +132,6 @@
   &__btn {
     width: 12px;
     height: 12px;
-    font-family: inherit;
     cursor: pointer;
     padding: 0;
     border: transparent;

@@ -1,9 +1,8 @@
 .about {
   padding-top: 125px;
   padding-bottom: 20px;
-  background-color: var(--bcg-pink-color);
-
   // margin: 0 auto;
+  background-color: var(--bcg-pink-color);
   background-image: url(../images/desktop/about/desktop-background.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -14,31 +13,31 @@
 }
 
 .about__description {
-  font-family: DM Sans, sans-serif;
-  font-weight: 500;
+  // font-family: DM Sans, sans-serif;
+  // font-weight: 500;
   color: var(--black-color);
 }
 .about__description-second {
-  font-family: DM Sans, sans-serif;
-  font-weight: 500;
+  // font-family: DM Sans, sans-serif;
+  // font-weight: 500;
   color: var(--primary-text-color);
   margin-bottom: 62px;
 }
 
 .title__label_about {
-  font-family: Titan One, sans-serif;
-  font-weight: normal;
+  // font-family: Titan One, sans-serif;
+  // font-weight: normal;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color: var(--title-text-color);
   margin: auto;
 }
 
 .title_about {
-  font-family: Titan One, sans-serif;
-  font-weight: normal;
+  // font-family: Titan One, sans-serif;
+  // font-weight: normal;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color: var(--accent-color);
 }
 
@@ -65,32 +64,36 @@
   }
 
   .title__label_about {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.17;
+    @include font(400, 18px, 1.17, normal);
+    // font-weight: normal;
+    // font-size: 18px;
+    // line-height: 1.17;
   }
 
   .title_about {
-    font-weight: normal;
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
     margin: 15px auto 26px;
+    @include font(400, 34px, 1.15, 0.04em);
+    // font-weight: normal;
+    // font-size: 34px;
+    // line-height: 1.15;
+    // letter-spacing: 0.04em;
   }
 
   .about__description {
     margin-bottom: 28px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.58;
-    letter-spacing: normal;
+    @include font(500, 12px, 1.58, normal);
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 1.58;
+    // letter-spacing: normal;
   }
 
   .about__description-second {
     margin-bottom: 18px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.58;
+    @include font(500, 12px, 1.58, normal);
+    // font-weight: 500;
+    // font-size: 12px;
+    // line-height: 1.58;
   }
 
   .about__description-wrapper {
@@ -104,18 +107,20 @@
   }
 
   .modal-about__title {
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 1.17;
-    text-align: center;
     padding-bottom: 20px;
+    @include font(400, 19px, 1.17, normal);
+    text-align: center;
+    // font-weight: normal;
+    // font-size: 19px;
+    // line-height: 1.17;
   }
 
   .modal-about__description {
     text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.58;
+    @include font(500, 14px, 1.58, normal);
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.58;
   }
 }
 
@@ -126,29 +131,31 @@
   }
 
   .title__label_about {
-    font-size: 26px;
-    line-height: 1.15;
+    // font-size: 26px;
+    // line-height: 1.15;
   }
 
   .title_about {
-    font-size: 48px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
+    // font-size: 48px;
+    // line-height: 1.15;
+    // letter-spacing: 0.04em;
     margin: 16px auto 50px;
   }
 
   .about__description {
     margin-bottom: 30px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.79;
-    letter-spacing: 0.04em;
+    @include font(500, 14px, 1.79, 0.04em);
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.79;
+    // letter-spacing: 0.04em;
   }
 
   .about__description-second {
     margin-bottom: 60px;
-    font-size: 14px;
-    line-height: 1.79;
+    @include font(500, 14px, 1.79, 0.04em);
+    // font-size: 14px;
+    // line-height: 1.79;
   }
 
   .about__wrapper {
@@ -161,35 +168,37 @@
   }
 
   .modal-about__title {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
-    text-align: center;
     padding-bottom: 30px;
+    @include font(400, 24px, 1.14, 0.06em);
+    // font-weight: 400;
+    // font-size: 24px;
+    // line-height: 1.14;
+    // letter-spacing: 0.06em;
+    text-align: center;
   }
 
   .modal-about__close-btn {
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 8px;
     right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    background: transparent;
+    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;
+    background: transparent;
     transition: fill var(--delay-time) var(--time-function);
   }
 
   .modal-about__description {
+    @include font(500, 14px, 1.5, normal);
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.5;
     text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.5;
   }
 }
 
@@ -208,29 +217,31 @@
   }
 
   .title__label_about {
-    font-size: 30px;
-    line-height: 1.13;
+    // font-size: 30px;
+    // line-height: 1.13;
   }
 
   .title_about {
-    font-size: 58px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
+    // font-size: 58px;
+    // line-height: 1.14;
+    // letter-spacing: 0.06em;
   }
 
   .about__description {
     margin-bottom: 36px;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 176%;
-    letter-spacing: 0.04em;
+    @include font(400, 16px, 1.76, 0.04em);
+    // font-style: normal;
+    // font-size: 16px;
+    // line-height: 176%;
+    // letter-spacing: 0.04em;
   }
 
   .about__description-second {
     margin-bottom: 46px;
-    font-size: 14px;
-    line-height: 194%;
-    letter-spacing: 0.04em;
+    @include font(400, 14px, 1.94, 0.04em);
+    // font-size: 14px;
+    // line-height: 194%;
+    // letter-spacing: 0.04em;
   }
 
   .about__description-wrapper {
@@ -239,27 +250,28 @@
   }
 
   .modal-about__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
-    text-align: center;
     padding-bottom: 50px;
+    @include font(400, 36px, 1.14, 0.06em);
+    // font-weight: 400;
+    // font-size: 36px;
+    // line-height: 1.14;
+    // letter-spacing: 0.06em;
+    text-align: center;
   }
 
   .modal-about__close-btn {
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 8px;
     right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    background: transparent;
+    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;
+    background: transparent;
     transition: fill var(--delay-time) var(--time-function);
   }
 

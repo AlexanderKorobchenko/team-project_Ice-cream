@@ -24,11 +24,11 @@
     width: max-content;
     margin-left: auto;
     margin-right: auto;
-    // @include font(700, 14px, 1.86, 0.02em);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
+    @include font(700, 14px, 1.86, 0.02em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.86;
+    // letter-spacing: 0.02em;
     color: var(--primary-text-color);
   }
 }
@@ -48,11 +48,11 @@
   .footer__tel {
     margin-top: 46px;
     margin-bottom: 42px;
-    // @include font(700, 12px, 1.86, 0.02em);
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
+    @include font(700, 12px, 1.86, 0.02em);
+    // font-weight: 700;
+    // font-size: 12px;
+    // line-height: 1.86;
+    // letter-spacing: 0.02em;
   }
   .footer__copyright {
     padding-top: 24px;
@@ -79,11 +79,11 @@
   .footer__tel {
     margin-top: 46px;
     margin-bottom: 174px;
-    // @include font(700, 12px, 1.86, 0.02em);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
+    @include font(700, 12px, 1.86, 0.02em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.86;
+    // letter-spacing: 0.02em;
   }
   .footer__copyright {
     padding-top: 24px;

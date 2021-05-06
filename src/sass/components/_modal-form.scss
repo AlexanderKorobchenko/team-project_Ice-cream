@@ -8,7 +8,7 @@
     padding: 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--delay-time) var(--time-function);
 
     &::placeholder {
       color: rgba(117, 117, 117, 0.5);
@@ -28,7 +28,7 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--delay-time) var(--time-function);
 
     .modal-form__input:focus + & {
       fill: var(--accent-color);

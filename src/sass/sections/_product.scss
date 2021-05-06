@@ -19,7 +19,6 @@
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
-
     border-radius: 24px;
 
     @media screen and (max-width: 319px) {
@@ -29,14 +28,12 @@
 
   &__name {
     position: relative;
-    font-family: Titan One;
-
-    // @include font($fw: 400, $fs: 20px, $lh: 23px, $ls: 0.03em);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.04em;
-
+    font-family: 'Titan One';
+    @include font($fw: 400, $fs: 20px, $lh: 23px, $ls: 0.04em);
+    // font-weight: 400;
+    // font-size: 20px;
+    // line-height: 23px;
+    // letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 30px;
@@ -47,11 +44,11 @@
     overflow: hidden;
     font-family: DM Sans;
 
-    // @include font($fw: 700, $fs: 14px, $lh: 21px, $ls: 0.04em);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.04em;
+    @include font($fw: 700, $fs: 14px, $lh: 21px, $ls: 0.04em);
+    // font-weight: bold;
+    // font-size: 14px;
+    // line-height: 21px;
+    // letter-spacing: 0.04em;
 
     color: var(--white-color);
     margin-bottom: 30px;
@@ -104,11 +101,11 @@
 
 .product__name::after {
   content: ' ';
-  background-image: url(../images/desktop/product/points-3.png);
   display: block;
   width: 26px;
   height: 6px;
   margin: auto;
+  background-image: url(../images/desktop/product/points-3.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 30px;
@@ -116,6 +113,9 @@
 
 .product__item > .product__name::before {
   content: ' ';
+  display: block;
+  width: 249px;
+  height: 252px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -123,9 +123,6 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
-  width: 249px;
-  height: 252px;
 
   @media screen and (max-width: 319px) {
     width: 200px;
@@ -196,13 +193,12 @@
     }
 
     &__description {
-      // @include font($fw: 700, $fs: 14px, $lh: 25px, $ls: 0.04em);
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 25px;
-      letter-spacing: 0.04em;
-
       margin-bottom: 40px;
+      @include font($fw: 700, $fs: 14px, $lh: 25px, $ls: 0.04em);
+      // font-weight: 700;
+      // font-size: 14px;
+      // line-height: 25px;
+      // letter-spacing: 0.04em;
     }
   }
 
@@ -212,21 +208,21 @@
   }
 
   .product__item:nth-child(1) > .product__name::before {
-    background-image: url(../images/tablet/product/1-product-tab.png);
     width: 220px;
     height: 226px;
+    background-image: url(../images/tablet/product/1-product-tab.png);
   }
 
   .product__item:nth-child(2) > .product__name::before {
-    background-image: url(../images/tablet/product/2-product-tab.png);
     width: 220px;
     height: 233px;
+    background-image: url(../images/tablet/product/2-product-tab.png);
   }
 
   .product__item:nth-child(3) > .product__name::before {
-    background-image: url(../images/tablet/product/3-product-tab.png);
     width: 220px;
     height: 224px;
+    background-image: url(../images/tablet/product/3-product-tab.png);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -268,22 +264,21 @@
     }
 
     &__name {
-      // @include font($fw: 400, $fs: 30px, $lh: 34px, $ls: 0.03em);
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 34px;
       margin-bottom: 32px;
+      @include font($fw: 400, $fs: 30px, $lh: 34px, $ls: 0.03em);
+      // font-weight: 400;
+      // font-size: 30px;
+      // line-height: 34px;
     }
 
     &__description {
       max-height: 106px;
-      // @include font($fw: 700, $fs: 16px, $lh: 28px, $ls: 0.04em);
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 28px;
-      letter-spacing: 0.04em;
-
       margin-bottom: 62px;
+      @include font($fw: 700, $fs: 16px, $lh: 28px, $ls: 0.04em);
+      // font-weight: 700;
+      // font-size: 16px;
+      // line-height: 28px;
+      // letter-spacing: 0.04em;
     }
   }
 
@@ -296,21 +291,21 @@
   }
 
   .product__item:nth-child(1) > .product__name::before {
-    background-image: url(../images/desktop/product/1-product-laptop.png);
     width: 335px;
     height: 335px;
+    background-image: url(../images/desktop/product/1-product-laptop.png);
   }
 
   .product__item:nth-child(2) > .product__name::before {
-    background-image: url(../images/desktop/product/2-product-laptop.png);
     width: 337px;
     height: 335px;
+    background-image: url(../images/desktop/product/2-product-laptop.png);
   }
 
   .product__item:nth-child(3) > .product__name::before {
-    background-image: url(../images/desktop/product/3-product-laptop.png);
     width: 335px;
     height: 335px;
+    background-image: url(../images/desktop/product/3-product-laptop.png);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -342,12 +337,12 @@
   width: 100%;
   height: 130px;
   padding: 5px;
-  font-family: DM Sans;
-  // @include font($fw: 700, $fs: 14px, $lh: 21px, $ls: 0.04em);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
+  @include font($fw: 700, $fs: 14px, $lh: 21px, $ls: 0.04em);
+  // font-family: DM Sans;
+  // font-weight: bold;
+  // font-size: 14px;
+  // line-height: 21px;
+  // letter-spacing: 0.04em;
 
   color: var(--white-color);
   pointer-events: none;
