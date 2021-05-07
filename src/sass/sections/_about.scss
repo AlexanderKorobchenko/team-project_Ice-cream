@@ -131,11 +131,13 @@
   }
 
   .title__label_about {
+    @include font(400, 26px, 1.15, normal);
     // font-size: 26px;
     // line-height: 1.15;
   }
 
   .title_about {
+    @include font(400, 48px, 1.15, normal);
     // font-size: 48px;
     // line-height: 1.15;
     // letter-spacing: 0.04em;
@@ -217,11 +219,13 @@
   }
 
   .title__label_about {
+    @include font(500, 30px, 1.13, normal);
     // font-size: 30px;
     // line-height: 1.13;
   }
 
   .title_about {
+    @include font(400, 58px, 1.14, normal);
     // font-size: 58px;
     // line-height: 1.14;
     // letter-spacing: 0.06em;

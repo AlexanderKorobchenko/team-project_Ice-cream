@@ -132,7 +132,7 @@
 
   .advantages__value {
     font-family: 'Titan One', cursive;
-    @include font(400, 58px, 1.14, normal);
+
     // font-weight: 400;
     // font-size: 58px;
     // line-height: 1.14;
@@ -140,6 +140,7 @@
   }
 
   .advantages__description {
+    @include font(700, 16px, 1.76, normal);
     // font-size: 16px;
     // line-height: 1.76;
   }
