@@ -2,13 +2,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 94px 15px;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
   z-index: 1000;
   opacity: 1;
-  overflow-y: scroll;
-  // background: var(--title-text-color);
+  overflow-y: auto;
   background-image: linear-gradient(to bottom, #f35f82, var(--title-text-color));
   transition: opacity 500ms var(--time-function);
 
@@ -22,26 +21,14 @@
   }
 }
 .modal-window {
-  display: block;
-  width: 100%;
-  height: auto;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
   justify-content: center;
   border-radius: 4px;
-  background-color: var(--bcg-hero-color);
   border: 2px solid var(--white-color);
-  // background-image: radial-gradient(
-  //   circle at center,
-  //   rgb(76, 193, 223),
-  //   white,
-  //   pink,
-  //   rgb(76, 193, 223)
-  // );
-  // background: var(--bcg-hero-color);
+  background-color: var(--bcg-hero-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: transform 500ms var(--time-function), visibility 500ms var(--time-function);
 
@@ -54,32 +41,35 @@
     display: block;
     margin-left: 12px;
     margin-bottom: 12px;
-    @include font(700, 24px, 1.31, 0.01em);
-    // font-weight: 700;
-    // font-size: 24px;
-    // line-height: 1.31;
-    // letter-spacing: 0.01em;
+    font-family: 'Titan One';
+    @include font(400, 24px, 1.15, 0.04em);
     text-align: center;
-    background: linear-gradient(rgb(243, 5, 164), rgb(7, 89, 104));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-}
-@media screen and (min-width: 320px) {
-  .modal-window {
-    position: absolute;
-    width: 310px;
-    height: 609px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
+    color: var(--accent-color);
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 319px) {
+  .modal-window {
+    max-width: 310px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .modal-window {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .modal-window {
     width: 528px;
-    height: 581px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
   }
 }
