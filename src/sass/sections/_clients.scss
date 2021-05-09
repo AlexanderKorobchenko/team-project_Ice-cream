@@ -57,6 +57,18 @@
     cursor: pointer;
     background-color: #d9d9d9;
   }
+
+  .active {
+    background-color: transparent;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 13px;
+      background: url(../images/desktop/clients/home.svg) no-repeat;
+    }
+  }
 }
 
 .clients__wrapper-text {
