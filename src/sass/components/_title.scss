@@ -17,34 +17,17 @@
 @media screen and (max-width: 767px) {
   .title {
     @include font(400, 34px, 1.15, 0.04em);
-    // font-weight: 400;
-    // font-size: 34px;
-    // line-height: 1.15;
-    // letter-spacing: 0.04em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 48px, 0.965, normal);
-      // font-weight: 400;
-      // font-size: 48px;
-      // line-height: 0.965;
-      // letter-spacing: normal;
     }
   }
+
   .title__label {
     @include font(400, 30px, 1.17, normal);
-    // font-weight: 400;
-    // font-size: 18px;
-    // line-height: 1.17;
-    // letter-spacing: normal;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 48px, 1.15, 0.04em);
-      // font-weight: 400;
-      // font-size: 26px;
-      // line-height: 1.15;
-      // letter-spacing: 0.04em;
     }
   }
 }
@@ -53,34 +36,17 @@
 @media screen and (min-width: 768px) {
   .title {
     @include font(400, 58px, 1.17, 0.04em);
-    // font-weight: 400;
-    // font-size: 48px;
-    // line-height: 1.17;
-    // letter-spacing: 0.04em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 34px, 0.9005, 0.04em);
-      // font-weight: 400;
-      // font-size: 34px;
-      // line-height: 0.905;
-      // letter-spacing: 0.04em;
     }
   }
+
   .title__label {
     @include font(400, 26px, 1.15, normal);
-    // font-weight: 400;
-    // font-size: 26px;
-    // line-height: 1.15;
-    // letter-spacing: normal;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 22px, 1.14, 0.04em);
-      // font-weight: 400;
-      // font-size: 22px;
-      // line-height: 1.14;
-      // letter-spacing: 0.04em;
     }
   }
 }
@@ -89,34 +55,17 @@
 @media screen and (min-width: 1280px) {
   .title {
     @include font(400, 58px, 1.14, 0.06em);
-    // font-weight: 400;
-    // font-size: 58px;
-    // line-height: 1.14;
-    // letter-spacing: 0.06em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 58px, 0.905, 0.04em);
-      // font-weight: 400;
-      // font-size: 58px;
-      // line-height: 0.905;
-      // letter-spacing: 0.04em;
     }
   }
+
   .title__label {
     @include font(400, 30px, 1.33, 0.04em);
-    // font-weight: 400;
-    // font-size: 30px;
-    // line-height: 1.33;
-    // letter-spacing: 0.04em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 38px, 1.16, 0.04em);
-      // font-weight: 400;
-      // font-size: 38px;
-      // line-height: 1.16;
-      // letter-spacing: 0.04em;
     }
   }
 }
@@ -125,34 +74,17 @@
 @media screen and (max-width: 767px) {
   .title {
     @include font(400, 34px, 1.15, 0.04em);
-    // font-weight: 400;
-    // font-size: 34px;
-    // line-height: 1.15;
-    // letter-spacing: 0.04em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 48px, 0.965, normal);
-      // font-weight: 400;
-      // font-size: 48px;
-      // line-height: 0.965;
-      // letter-spacing: normal;
     }
   }
+
   .title__label {
     @include font(400, 30px, 1.17, normal);
-    // font-weight: 400;
-    // font-size: 18px;
-    // line-height: 1.17;
-    // letter-spacing: normal;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 48px, 1.15, 0.04em);
-      // font-weight: 400;
-      // font-size: 26px;
-      // line-height: 1.15;
-      // letter-spacing: 0.04em;
     }
   }
 }
@@ -161,34 +93,17 @@
 @media screen and (min-width: 768px) {
   .title {
     @include font(400, 58px, 1.17, 0.04em);
-    // font-weight: 400;
-    // font-size: 48px;
-    // line-height: 1.17;
-    // letter-spacing: 0.04em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 34px, 0.905, 0.04em);
-      // font-weight: 400;
-      // font-size: 34px;
-      // line-height: 0.905;
-      // letter-spacing: 0.04em;
     }
   }
+
   .title__label {
     @include font(400, 26px, 1.15, normal);
-    // font-weight: 400;
-    // font-size: 26px;
-    // line-height: 1.15;
-    // letter-spacing: normal;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 48px, 1.14, 0.04em);
-      // font-weight: 400;
-      // font-size: 22px;
-      // line-height: 1.14;
-      // letter-spacing: 0.04em;
     }
   }
 }
@@ -197,34 +112,17 @@
 @media screen and (min-width: 1280px) {
   .title {
     @include font(400, 58px, 1.14, 0.06em);
-    // font-weight: 400;
-    // font-size: 58px;
-    // line-height: 1.14;
-    // letter-spacing: 0.06em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 58px, 0.905, 0.04em);
-      // font-weight: 400;
-      // font-size: 58px;
-      // line-height: 0.905;
-      // letter-spacing: 0.04em;
     }
   }
+
   .title__label {
     @include font(400, 30px, 1.33, 0.04em);
-    // font-weight: 400;
-    // font-size: 30px;
-    // line-height: 1.33;
-    // letter-spacing: 0.04em;
-
     // модификатор для HERO
     &_hero {
       @include font(400, 38px, 1.16, 0.04em);
-      // font-weight: 400;
-      // font-size: 38px;
-      // line-height: 1.16;
-      // letter-spacing: 0.04em;
     }
   }
 }

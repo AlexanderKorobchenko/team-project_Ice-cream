@@ -30,10 +30,6 @@
     position: relative;
     font-family: 'Titan One';
     @include font($fw: 400, $fs: 20px, $lh: 23px, $ls: 0.04em);
-    // font-weight: 400;
-    // font-size: 20px;
-    // line-height: 23px;
-    // letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 30px;
@@ -43,13 +39,7 @@
     max-height: 124px;
     overflow: hidden;
     font-family: DM Sans;
-
     @include font($fw: 700, $fs: 14px, $lh: 21px, $ls: 0.04em);
-    // font-weight: bold;
-    // font-size: 14px;
-    // line-height: 21px;
-    // letter-spacing: 0.04em;
-
     color: var(--white-color);
     margin-bottom: 30px;
   }
@@ -195,10 +185,6 @@
     &__description {
       margin-bottom: 40px;
       @include font($fw: 700, $fs: 14px, $lh: 25px, $ls: 0.04em);
-      // font-weight: 700;
-      // font-size: 14px;
-      // line-height: 25px;
-      // letter-spacing: 0.04em;
     }
   }
 
@@ -243,7 +229,6 @@
 }
 
 // ==desktop
-
 @media screen and (min-width: 1280px) {
   $card-gap: 24px;
 
@@ -266,19 +251,12 @@
     &__name {
       margin-bottom: 32px;
       @include font($fw: 400, $fs: 30px, $lh: 34px, $ls: 0.03em);
-      // font-weight: 400;
-      // font-size: 30px;
-      // line-height: 34px;
     }
 
     &__description {
       max-height: 106px;
       margin-bottom: 62px;
       @include font($fw: 700, $fs: 16px, $lh: 28px, $ls: 0.04em);
-      // font-weight: 700;
-      // font-size: 16px;
-      // line-height: 28px;
-      // letter-spacing: 0.04em;
     }
   }
 
@@ -338,12 +316,6 @@
   height: 130px;
   padding: 5px;
   @include font($fw: 700, $fs: 14px, $lh: 21px, $ls: 0.04em);
-  // font-family: DM Sans;
-  // font-weight: bold;
-  // font-size: 14px;
-  // line-height: 21px;
-  // letter-spacing: 0.04em;
-
   color: var(--white-color);
   pointer-events: none;
   opacity: 0;

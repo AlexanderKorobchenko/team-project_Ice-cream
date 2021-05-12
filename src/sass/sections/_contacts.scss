@@ -40,7 +40,6 @@
 
 .contacts-cards__item {
   width: 100%;
-  // height: 100%;
   padding-top: 43px;
   padding-bottom: 43px;
   padding-left: 20px;
@@ -78,10 +77,6 @@
   margin-bottom: 25px;
   border-radius: 4px;
   @include font(500, 12px, 1.83, 0.04em);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 1.83;
-  // letter-spacing: 0.04em;
   text-align: center;
   color: var(--white-color);
   background-color: var(--coffee-color);
@@ -96,15 +91,10 @@
   margin-bottom: 25px;
   border-radius: 4px;
   @include font(500, 12px, 1.83, 0.04em);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 1.83;
-  // letter-spacing: 0.04em;
   text-align: center;
   color: var(--white-color);
   background-color: var(--green-color);
   @media screen and (min-width: 768px) {
-    // max-width: 138px;
     font-size: 16px;
     line-height: 1.88;
   }
@@ -115,10 +105,6 @@
 .contacts-cards__city {
   margin-bottom: 10px;
   @include font(500, 12px, 1.83, 0.04em);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 1.83;
-  // letter-spacing: 0.04em;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -133,9 +119,6 @@
   width: 100%;
   margin-bottom: 50px;
   @include font(500, 12px, 1.15, normal);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 1.5;
   color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
@@ -168,9 +151,6 @@
 .contacts-cards__shedule-days {
   margin-bottom: 10px;
   @include font(500, 12px, 1.22, normal);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 1.22;
   color: #000000;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -183,9 +163,6 @@
 }
 .contacts-cards__shedule-time {
   @include font(500, 12px, 1.83, normal);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 1.83;
   color: var(--title-text-color);
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -208,9 +185,6 @@
 }
 .contacts-cards__mob-info {
   @include font(500, 12px, 1.5, normal);
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 1.5;
   color: var(--primary-text-color);
   @media screen and (min-width: 768px) {
     font-size: 14px;

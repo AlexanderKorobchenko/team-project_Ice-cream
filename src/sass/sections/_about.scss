@@ -1,7 +1,6 @@
 .about {
   padding-top: 125px;
   padding-bottom: 20px;
-  // margin: 0 auto;
   background-color: var(--bcg-pink-color);
   background-image: url(../images/desktop/about/desktop-background.png);
   background-size: contain;
@@ -13,37 +12,27 @@
 }
 
 .about__description {
-  // font-family: DM Sans, sans-serif;
-  // font-weight: 500;
   color: var(--black-color);
 }
+
 .about__description-second {
-  // font-family: DM Sans, sans-serif;
-  // font-weight: 500;
   color: var(--primary-text-color);
   margin-bottom: 62px;
 }
 
 .title__label_about {
-  // font-family: Titan One, sans-serif;
-  // font-weight: normal;
   text-align: center;
-  // text-transform: uppercase;
   color: var(--title-text-color);
   margin: auto;
 }
 
 .title_about {
-  // font-family: Titan One, sans-serif;
-  // font-weight: normal;
   text-align: center;
-  // text-transform: uppercase;
   color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
   .about {
-    // max-width: 320px;
     margin: 0 auto;
     background-image: url(../images/mobile/about/mobile-background.png);
     background-size: contain;
@@ -65,35 +54,21 @@
 
   .title__label_about {
     @include font(400, 18px, 1.17, normal);
-    // font-weight: normal;
-    // font-size: 18px;
-    // line-height: 1.17;
   }
 
   .title_about {
     margin: 15px auto 26px;
     @include font(400, 34px, 1.15, 0.04em);
-    // font-weight: normal;
-    // font-size: 34px;
-    // line-height: 1.15;
-    // letter-spacing: 0.04em;
   }
 
   .about__description {
     margin-bottom: 28px;
     @include font(500, 12px, 1.58, normal);
-    // font-weight: 500;
-    // font-size: 12px;
-    // line-height: 1.58;
-    // letter-spacing: normal;
   }
 
   .about__description-second {
     margin-bottom: 18px;
     @include font(500, 12px, 1.58, normal);
-    // font-weight: 500;
-    // font-size: 12px;
-    // line-height: 1.58;
   }
 
   .about__description-wrapper {
@@ -110,17 +85,11 @@
     padding-bottom: 20px;
     @include font(400, 19px, 1.17, normal);
     text-align: center;
-    // font-weight: normal;
-    // font-size: 19px;
-    // line-height: 1.17;
   }
 
   .modal-about__description {
     text-align: center;
     @include font(500, 14px, 1.58, normal);
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.58;
   }
 }
 
@@ -132,32 +101,21 @@
 
   .title__label_about {
     @include font(400, 26px, 1.15, normal);
-    // font-size: 26px;
-    // line-height: 1.15;
   }
 
   .title_about {
     @include font(400, 48px, 1.15, normal);
-    // font-size: 48px;
-    // line-height: 1.15;
-    // letter-spacing: 0.04em;
     margin: 16px auto 50px;
   }
 
   .about__description {
     margin-bottom: 30px;
     @include font(500, 14px, 1.79, 0.04em);
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.79;
-    // letter-spacing: 0.04em;
   }
 
   .about__description-second {
     margin-bottom: 60px;
     @include font(500, 14px, 1.79, 0.04em);
-    // font-size: 14px;
-    // line-height: 1.79;
   }
 
   .about__wrapper {
@@ -172,10 +130,6 @@
   .modal-about__title {
     padding-bottom: 30px;
     @include font(400, 24px, 1.14, 0.06em);
-    // font-weight: 400;
-    // font-size: 24px;
-    // line-height: 1.14;
-    // letter-spacing: 0.06em;
     text-align: center;
   }
 
@@ -197,16 +151,12 @@
 
   .modal-about__description {
     @include font(500, 14px, 1.5, normal);
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.5;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about {
-    // min-width: 1280px;
     margin: 0 auto;
     background-image: url(../images/desktop/about/desktop-background.png);
     background-size: contain;
@@ -220,32 +170,20 @@
 
   .title__label_about {
     @include font(500, 30px, 1.13, normal);
-    // font-size: 30px;
-    // line-height: 1.13;
   }
 
   .title_about {
     @include font(400, 58px, 1.14, normal);
-    // font-size: 58px;
-    // line-height: 1.14;
-    // letter-spacing: 0.06em;
   }
 
   .about__description {
     margin-bottom: 36px;
     @include font(400, 16px, 1.76, 0.04em);
-    // font-style: normal;
-    // font-size: 16px;
-    // line-height: 176%;
-    // letter-spacing: 0.04em;
   }
 
   .about__description-second {
     margin-bottom: 46px;
     @include font(400, 14px, 1.94, 0.04em);
-    // font-size: 14px;
-    // line-height: 194%;
-    // letter-spacing: 0.04em;
   }
 
   .about__description-wrapper {
@@ -256,10 +194,6 @@
   .modal-about__title {
     padding-bottom: 50px;
     @include font(400, 36px, 1.14, 0.06em);
-    // font-weight: 400;
-    // font-size: 36px;
-    // line-height: 1.14;
-    // letter-spacing: 0.06em;
     text-align: center;
   }
 
